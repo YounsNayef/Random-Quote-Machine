@@ -16,7 +16,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/random-quote-machine.git
+git clone https://github.com/YounsNayef/random-quote-machine.git
 Navigate into the project directory:
 
 bash
@@ -40,4 +40,3 @@ Built as a project for learning React and modern frontend development.
 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-# Random-Quote-Machine
