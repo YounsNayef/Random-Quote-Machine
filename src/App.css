@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  transition: background 0.5s;
+}
+
+#quote-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.loading {
+  transform: scale(0.95);
+}
+
+.quote-text {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #555;
+  position: relative;
+}
+
+.quote-text::before, .quote-text::after {
+  content: '"';
+  font-size: 40px;
+  color: #009ffd;
+  position: absolute;
+  top: -10px;
+}
+
+.quote-text::before {
+  left: -20px;
+}
+
+.quote-text::after {
+  right: -20px;
+}
+
+.quote-author {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #888;
+}
+
+#new-quote {
+  background: linear-gradient(135deg, #009ffd, #2a2a72);
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#new-quote:hover {
+  background: linear-gradient(135deg, #006fbb, #2a2a72);
+  transform: scale(1.05);
+}
+
+#tweet-quote {
+  display: inline-block;
+  margin-top: 20px;
+  color: #009ffd;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+#tweet-quote:hover {
+  color: #006fbb;
+}
